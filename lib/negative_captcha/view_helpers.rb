@@ -14,7 +14,7 @@ module ActionView
           negative_captcha.values[field],
           options
         ) +
-          content_tag('div', :style => 'position: absolute; left: -2000px;') do
+        content_tag('div', :style => 'position: absolute; left: -2000px;') do
           text_field_tag(field, '', :tabindex => '999', :autocomplete => 'off')
         end.html_safe
       end
